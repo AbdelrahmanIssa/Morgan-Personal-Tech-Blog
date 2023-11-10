@@ -1,0 +1,320 @@
+* {
+      list-style: none;
+      text-decoration: none !important;
+}
+
+:root {
+      --blue-color: #0078ff;
+      --background-color: #f5f5f5;
+      --close-to-black: rgb(30, 30, 30);
+}
+
+
+.overlay-blue {
+
+      background-color: rgba(0, 120, 255, .7);
+
+}
+
+#work,
+#contact-us,
+#counter {
+      background-image: url(images/overlay-bg.jpg);
+      width: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+}
+
+/* NAV */
+.navbar {
+      background-color: rgba(0, 0, 0, .8);
+}
+
+.nav-item {
+      position: relative;
+      padding-right: 18px;
+}
+
+.nav-hover-underline {
+      color: white;
+      font-size: 1.15rem;
+}
+
+#nav-droptown {
+      color: rgb(255, 255, 255);
+}
+
+.nav-hover-underline::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      background: rgb(255, 255, 255);
+      transition-duration: .3s;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+}
+
+.nav-link:hover {
+      color: white;
+}
+
+.nav-hover-underline:hover::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      width: 60%;
+      height: 3px;
+}
+
+@media (max-width: 992px) {
+
+
+      .nav-item button {
+            padding-left: 0% !important
+      }
+
+      .nav-item {
+            width: fit-content;
+      }
+}
+
+.nav-item .active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3rem;
+      height: 3px;
+}
+
+/* dropdown */
+.dropdown-menu li a:hover,
+#drop-deep:hover,
+#drop-deep .drop-inner:hover {
+      color: var(--blue-color) !important;
+      background-color: #fff;
+
+}
+
+.dropdown-menu li a {
+      color: #000000;
+}
+
+.dropdown-menu li a:hover {
+      background-color: transparent;
+}
+
+#drop-deep:hover {
+
+      overflow: visible !important
+}
+
+#drop-deep ul a {
+      color: rgb(33, 37, 41) !important
+}
+
+#drop-deep ul {
+      left: 100%;
+      top: 0%;
+}
+
+/* header */
+#header {
+      background-image: url(images/hero-bg.jpg);
+      height: 100vh;
+      background-position: center center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+}
+
+.layer {
+      inset: 0;
+}
+
+/* header */
+/* about */
+#about {
+      background-color: var(--background-color);
+}
+
+.span-about-font {
+      font-size: 1.1rem;
+}
+
+.about h4 {
+      font-size: 1.1rem;
+}
+
+.progress {
+      border-radius: 0;
+      height: .7rem;
+}
+
+.h3-left-side-about::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 150%;
+      width: 15%;
+      height: 3px;
+      background: var(--blue-color);
+}
+
+/* about */
+/* services */
+#services {
+      background-color: var(--background-color);
+}
+
+.head-line-h2 {
+      font-size: 3.5rem;
+      font-weight: bolder;
+      color: var(--close-to-black);
+}
+
+.head-line::after {
+      content: "";
+      position: absolute;
+      left: 45%;
+      top: 140%;
+      width: 10%;
+      height: 5px;
+      background: var(--blue-color);
+}
+
+
+#services i {
+      font-size: 1.8rem;
+      background: rgb(255, 255, 255);
+      padding: 1.4rem;
+      box-shadow: 0 0 0 10px var(--blue-color);
+      transition: all .5s;
+}
+
+#services i:hover {
+      background: #0078ff;
+      color: white;
+      box-shadow: 0 0 0 10px rgba(0, 120, 255, .3);
+}
+
+/* services */
+/* counter */
+
+#counter i {
+      font-size: 1.8rem;
+      padding: 1.4rem;
+      box-shadow: 0 0 0 10px rgba(213, 238, 250, 0.8);
+}
+
+#counter h4 {
+      font-size: 1.3rem;
+      font-weight: 200;
+}
+
+#counter span {
+      font-size: 1.6rem;
+}
+
+/* counter */
+/* PORTFOLIO  */
+
+#portfolio {
+      background-color: var(--background-color);
+}
+
+#portfolio span {
+      font-size: .8rem;
+}
+
+#portfolio i {
+      font-size: 2rem;
+      color: var(--blue-color);
+      cursor: pointer;
+}
+
+.item-img {
+      transition: 2s transform;
+}
+
+.itemsPorf:hover .item-img {
+      transform: scale(1.3);
+}
+
+/* PORTFOLIO  */
+
+/* WORK */
+
+
+#work button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+}
+
+/* WORK */
+/* BLOG */
+.blog-morgan-pic {
+      width: 2.7rem;
+}
+
+#blog a {
+      font-size: 1.2rem;
+      color: #000000;
+}
+
+.blog-hover {
+      transition: all 1s;
+}
+
+.blog-hover:hover {
+      color: var(--blue-color);
+      cursor: pointer;
+}
+
+.blog-card-postition {
+      transform: translate(-50%, 50%);
+}
+
+.blog-card-postition h6 {
+      font-size: .8rem;
+}
+
+/* CONTACT */
+.h3-underline::after {
+      content: "";
+      position: absolute;
+      left: 0%;
+      bottom: -20%;
+      width: 17%;
+      height: 2px;
+      background: var(--blue-color);
+}
+
+#contact-us button,
+p {
+      font-size: 1.2rem;
+}
+
+.icons-contacts {
+      font-size: 1.2rem;
+      margin: .6rem;
+}
+
+.icons-contacts:hover {
+      cursor: pointer;
+      background-color: var(--blue-color);
+      color: #fff;
+      border-radius: 50%;
+}
+
+/* contacts */
+/* footer */
+footer {
+      background: #0062d3;
+}
